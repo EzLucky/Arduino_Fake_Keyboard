@@ -40,7 +40,7 @@ void loop() {
       Keyboard.write(KEY_RETURN);
       break;
     case UBUNTU:
-      //ctrl+alt+t : new terminal (not working on every Unix)
+      //ctrl+alt+t : new terminal (not working on every Linux, ok with Ubuntu)
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press(KEY_LEFT_ALT);
       Keyboard.press('t');
